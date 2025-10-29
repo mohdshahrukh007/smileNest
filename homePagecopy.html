@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smile Nest Aesthetic Dental Clinic | Dr. Ananya Shahi | Lucknow</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<style>
+    treatment-section {
+        background: linear-gradient(180deg, #f8fbff 0%, #eaf2fa 100%);
+        padding: 80px 0;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .treatment-title {
+        font-size: 2.2rem;
+        color: #004d7a;
+        font-weight: 700;
+        margin-bottom: 50px;
+        text-transform: uppercase;
+        position: relative;
+        text-align: center;
+        /* ✅ ensures center alignment */
+        display: inline-block;
+        /* centers title block neatly */
+        left: 50%;
+        transform: translateX(-50%);
+        /* ✅ perfectly center */
+    }
+
+    .treatment-title::after {
+        content: "";
+        width: 80px;
+        height: 4px;
+        background: #00a6fb;
+        display: block;
+        margin: 10px auto 0;
+        border-radius: 2px;
+    }
+
+    .tp-hero__treatment {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 40px;
+        justify-items: center;
+    }
+
+    .tp-hero__treatment-type {
+        background: #ffffff;
+        border-radius: 20px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        padding: 20px;
+        transition: all 0.4s ease;
+        cursor: pointer;
+
+        padding: 2rem;
+        margin: 1rem;
+    }
+
+    .tp-hero__treatment-type:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 12px 30px rgba(0, 166, 251, 0.2);
+    }
+
+    .tp-hero__treatment-type img {
+        width: 130px;
+        height: 130px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 4px solid #00a6fb;
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .tp-hero__treatment-type:hover img {
+        transform: scale(1.1);
+        box-shadow: 0 0 15px rgba(0, 166, 251, 0.4);
+    }
+
+    .tp-hero__treatment-type p {
+        margin-top: 15px;
+        font-weight: 600;
+        color: #003e5f;
+        font-size: 1rem;
+        letter-spacing: 0.3px;
+    }
+
+    @media (max-width: 768px) {
+        .treatment-title {
+            font-size: 1.8rem;
+        }
+
+        .tp-hero__treatment {
+            gap: 25px;
+        }
+    }
+</style>
+<script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navMenu = document.getElementById('navMenu');
+    const header = document.querySelector('header');
+
+    toggle.addEventListener('click', () => {
+        navMenu.classList.toggle('show');
+    });
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 60) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+</script>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="48" stroke="white" stroke-width="2" />
+                    <path d="M50 30 C40 30 35 35 35 40 C35 45 40 50 50 50 C60 50 65 45 65 40 C65 35 60 30 50 30 Z"
+                        fill="white" />
+                    <path d="M30 55 Q40 50 50 50 Q60 50 70 55" stroke="white" stroke-width="2" fill="none" />
+                    <circle cx="45" cy="40" r="2" fill="#1e5a7d" />
+                    <circle cx="55" cy="40" r="2" fill="#1e5a7d" />
+                </svg>
+                <span>SMILE NEST</span>
+            </div>
+            <button class="menu-toggle">☰</button>
+            <ul id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- hero  start -->
+    <div class="tp-hero__area" style="margin-top: 6rem;align-items: center;" >
+
+        <div class="container-1850">
+            <div class="tp-hero__content-wrapper">
+                <div class="tp-hero__content">
+                    <div class="title-wrap">
+                        <h1 class="title tp-chars">
+                            <div class="tp-line">Smile</div>
+                            <div class="tp-line">Confidently</div>
+                            <div class="tp-line">with Smile Nest</div>
+                            <div class="tp-line">Dentistry.</div>
+                        </h1>
+
+                        <p>We provide gentle, modern dentistry that puts your comfort first — whether
+                            you need a
+                            simple checkup or a complete smile makeover.</p>
+                    </div>
+                    <div class="list-wrap">
+                        <ul style="display: flex; flex-direction: column; ">
+                            <li>
+                                <img src="assets/img/icon/check.svg" alt=""> ISO 9001 Quality Certified.
+                            </li>
+                            <li>
+                                <img src="assets/img/icon/check.svg" alt=""> Over 10,000 Smiles
+                                Restored.
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="tp-btn__1 tp-btn-bg-2">Free Online Consultation
+                            <span class="icon">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <mask id="mask0_50_219" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
+                                        y="0" width="14" height="14">
+                                        <rect width="14" height="14" fill="#D9D9D9"></rect>
+                                    </mask>
+                                    <g mask="url(#mask0_50_219)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M13.3676 1.63776L1.63768 13.3676L0.632266 12.3622L12.3621 0.632339L13.3676 1.63776Z"
+                                            fill="#1E1D2B"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M11.8594 1.13503C9.49528 3.49911 9.64207 7.51072 11.8594 9.728L12.3621 10.2307L13.3675 9.22529L12.8648 8.72259C11.181 7.03885 11.0771 3.92808 12.8648 2.14045L13.3675 1.63774L12.3621 0.632325L11.8594 1.13503Z"
+                                            fill="#1E1D2B"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M12.8648 2.14047C10.5008 4.50454 6.48916 4.35775 4.27188 2.14047L3.76917 1.63776L4.77458 0.632339L5.27729 1.13505C6.96036 2.81812 10.0718 2.92268 11.8594 1.13505L12.3621 0.632339L13.3676 1.63776L12.8648 2.14047Z"
+                                            fill="#1E1D2B"></path>
+                                    </g>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="tp-hero__image">
+                    <div class="img-reveal"
+                        style="opacity: 1; visibility: inherit; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                        <img src="https://images.pexels.com/photos/6627381/pexels-photo-6627381.jpeg" alt="Image"
+                            style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="treatment-section"  data-aos="fade-up">
+            <div class="">
+                <h2 class="treatment-title">Our Specialized Treatments</h2>
+                <div class="tp-hero__treatment">
+                    <div  data-aos-delay="100" class="tp-hero__treatment-type">
+                        <a class="tp-img-anim">
+                            <img src="https://images.pexels.com/photos/4270095/pexels-photo-4270095.jpeg?auto=compress&cs=tinysrgb&w=600&h=400"
+                                alt="General Dentistry">
+                        </a>
+                        <p>General Dentistry</p>
+                    </div>
+                    <div  data-aos-delay="100" class="tp-hero__treatment-type">
+                        <a class="tp-img-anim">
+                            <img src="https://images.pexels.com/photos/5355702/pexels-photo-5355702.jpeg?auto=compress&cs=tinysrgb&w=600&h=400"
+                                alt="Cosmetic Dentistry">
+                        </a>
+                        <p>Cosmetic Dentistry</p>
+                    </div>
+                    <div  data-aos-delay="100" class="tp-hero__treatment-type">
+                        <a class="tp-img-anim">
+                            <img src="https://images.pexels.com/photos/3845764/pexels-photo-3845764.jpeg?auto=compress&cs=tinysrgb&w=600&h=400"
+                                alt="Dental Implants">
+                        </a>
+                        <p>Dental Implants</p>
+                    </div>
+                    <div  data-aos-delay="100" class="tp-hero__treatment-type">
+                        <a class="tp-img-anim">
+                            <img src="https://images.pexels.com/photos/5355700/pexels-photo-5355700.jpeg?auto=compress&cs=tinysrgb&w=600&h=400"
+                                alt="Orthodontics">
+                        </a>
+                        <p>Orthodontics</p>
+                    </div>
+                    <div  data-aos-delay="100" class="tp-hero__treatment-type">
+                        <a class="tp-img-anim">
+                            <img src="https://images.pexels.com/photos/4269696/pexels-photo-4269696.jpeg?auto=compress&cs=tinysrgb&w=600&h=400"
+                                alt="Pediatric Dentist">
+                        </a>
+                        <p>Pediatric Dentist</p>
+                    </div>
+                    <div  data-aos-delay="100" class="tp-hero__treatment-type">
+                        <a class="tp-img-anim">
+                            <img src="https://images.pexels.com/photos/8460154/pexels-photo-8460154.jpeg?auto=compress&cs=tinysrgb&w=600&h=400"
+                                alt="Children’s Dentistry">
+                        </a>
+                        <p>Children’s Dentistry</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+     <section class="features" data-aos="fade-up">
+        <h2 class="section-title">Why Choose Smile Nest?</h2>
+        <div class="features-grid">
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-icon">🦷</div>
+                <h3>Painless Treatment</h3>
+                <p>Advanced techniques for comfortable root canals and extractions</p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-icon">✨</div>
+                <h3>Advanced Technology</h3>
+                <p>State-of-the-art implants and invisible aligners</p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-icon">😊</div>
+                <h3>Cosmetic Excellence</h3>
+                <p>Teeth whitening and complete smile makeovers</p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="feature-icon">🏥</div>
+                <h3>Hygienic Setup</h3>
+                <p>Strict sterilization protocols and patient-friendly environment</p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="feature-icon">👨‍⚕️</div>
+                <h3>Experienced Care</h3>
+                <p>4+ years of specialized dental expertise</p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+                <div class="feature-icon">💚</div>
+                <h3>Patient First</h3>
+                <p>Your comfort and satisfaction is our priority</p>
+            </div>
+        </div>
+    </section>
+    <!-- hero slider end -->
+
+    <!-- Funfact section start -->
+    <!-- <section class="tp-funfact__area tp-space-top">
+        <div class="container-1850">
+            <div class="tp-emergency__cards">
+                <div class="tp-emergency__card card-1 tp-fade"
+                    style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                    <h3 class="title">Emergency Case</h3>
+                    <div class="para-wrap">
+                        <img src="assets/teeth.jpg" width="100" height="100" alt="Icon"
+                            style="border-radius: 50%; object-fit: cover; border: 3px solid #00a6fb;">
+                        <p>Dental pain or injury can’t wait. Whether it’s a sudden toothache, or an accident.
+                        </p>
+                    </div>
+                    <div class="contact-box">
+                        <div class="icon">
+                            <img src="assets/telephone.png" width="100" height="100" alt="Icon"
+                                style="border-radius: 50%; object-fit: cover; border: 3px solid #00a6fb;">
+                        </div>
+                        <div class="contact-wrap">
+                            <p>Emergency Support</p>
+                            <a href="tel:18005551234">+1 (800) 555-1234</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tp-emergency__card card-2 tp-fade" data-delay="0.5"
+                    style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                    <h3 class="title">Smile Nest Location</h3>
+                    <div class="para-wrap">
+                        <img src="assets/img/icon/teeth-2.svg" alt="Icon">
+                        <p>SmileBright Dental – Los Angeles (Main Branch), 123 Main Street, Downtown, Los
+                            Angeles, CA
+                            90012, USA.</p>
+                    </div>
+
+                </div>
+                <div class="tp-emergency__card card-3 tp-fade" data-delay="0.75"
+                    style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                    <h3 class="title">Doctors Appointment</h3>
+                    <div class="para-wrap">
+                        <img src="assets/img/icon/calender.svg" alt="Icon">
+                        <p>Our online booking system makes it easy to reserve your spot in minutes.</p>
+                    </div>
+                    <div class="contact-box">
+                        <div class="icon"><img src="assets/img/icon/phone-2.svg" alt="Phone Icon"></div>
+                        <div class="contact-wrap contact-wrap-2">
+                            <p>Doctors Appointment</p>
+                            <a href="tel:18008885436">+1 (800) 888-5436</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Funfact section end -->
+
+    <!-- About -->
+
+    <section id="about" class="about">
+        <div class="about-content">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=800" alt="Dr. Ananya Shahi">
+            </div>
+            <div class="about-text">
+                <h2>Dr. Ananya Shahi</h2>
+                <h3>BDS (DCI Member)</h3>
+                <p>With more than 4 years of experience in general and aesthetic dentistry, Dr. Ananya Shahi combines
+                    modern dental techniques with a patient-first approach. Her vision is to make advanced dental care
+                    affordable, painless, and long-lasting for every patient.</p>
+
+                <h3 class="our-values-heading">Our Values:</h3>
+                <ul class="values">
+                    <li  data-aos="fade-up" data-aos-delay="100">Patient comfort comes first</li>
+                    <li  data-aos="fade-up" data-aos-delay="200">Strict hygiene and sterilization protocols</li>
+                    <li  data-aos="fade-up" data-aos-delay="300">Transparent and ethical dental care</li>
+                    <li  data-aos="fade-up" data-aos-delay="400">Long-term focus on oral health</li>
+                </ul>
+
+                <p class="comfort-smile-text">"Your comfort and smile mean everything to us."</p>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+    <section id="testimonials" class="testimonials">
+        <h2 class="section-title">What Our Patients Say</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card"  data-aos="fade-up" data-aos-delay="100">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">Dr. Ananya is amazing! I was terrified of root canals, but she made the
+                    entire experience painless and comfortable. The clinic is so clean and modern. Highly recommend!</p>
+                <p class="testimonial-author">- Priya Sharma</p>
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">Got my dental implants done here and I'm so happy with the results. Dr.
+                    Ananya explained everything clearly and the procedure was smoother than I expected. Great service!
+                </p>
+                <p class="testimonial-author">- Rajesh Kumar</p>
+            </div>
+            <div class="testimonial-card"  data-aos="fade-up" data-aos-delay="500">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">Best dental clinic in Lucknow! The invisible aligners are working perfectly
+                    and no one even notices I'm wearing them. Dr. Ananya is very professional and caring.</p>
+                <p class="testimonial-author">- Neha Gupta</p>
+            </div>
+        </div>
+    </section>
+
+    </div>
+
+    <section id="services" class="services">
+        <h2 class="section-title">Our Comprehensive Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>🦷 Dental Implants</h3>
+                <p>Permanent, natural-looking tooth replacement with advanced implant technology for a confident smile.
+                </p>
+            </div>
+            <div class="service-card">
+                <h3>😁 Invisible Aligners</h3>
+                <p>Straighten your teeth discreetly without metal braces. Comfortable and effective orthodontic
+                    solution.</p>
+            </div>
+            <div class="service-card">
+                <h3>🌟 Root Canal Treatment</h3>
+                <p>Painless RCT to save your natural tooth. Advanced techniques ensure comfort throughout the procedure.
+                </p>
+            </div>
+            <div class="service-card">
+                <h3>✨ Teeth Whitening</h3>
+                <p>Professional whitening treatments and complete smile makeovers for a brighter, confident you.</p>
+            </div>
+            <div class="service-card">
+                <h3>🦷 Tooth Extraction</h3>
+                <p>Safe and pain-free tooth and wisdom tooth removal with minimal discomfort and quick recovery.</p>
+            </div>
+            <div class="service-card">
+                <h3>💎 Scaling & Polishing</h3>
+                <p>Deep cleaning for fresh, healthy teeth and gums. Prevent dental problems with regular maintenance.
+                </p>
+            </div>
+            <div class="service-card">
+                <h3>🦷 Complete Denture</h3>
+                <p>Custom-fitted dentures for natural appearance and comfortable function.</p>
+            </div>
+            <div class="service-card">
+                <h3>🔬 Oral Surgery</h3>
+                <p>Advanced oral surgery treatments performed with precision and care.</p>
+            </div>
+            <div class="service-card">
+                <h3>👶 Pediatric Dentistry</h3>
+                <p>Gentle dental care for children in a friendly, stress-free environment.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="section-title">Visit Us Today</h2>
+        <div class="contact-content">
+            <div class="contact-info" >
+                <h3 style="font-size: 2rem; margin-bottom: 2rem;">Get In Touch</h3>
+                
+                <div class="contact-item">
+                    <svg fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                    </svg>
+                    <div>
+                        <h4>Location</h4>
+                        <p>111/9, Vrindavan Yojna,<br>Near LPS School, Lucknow - 226029<br>(near SGPGI)</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <svg fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                    </svg>
+                    <div>
+                        <h4>Phone / WhatsApp</h4>
+                        <p><a href="tel:9580181395" style="color: white; text-decoration: none;">9580181395</a><br>
+                        <a href="tel:8858099456" style="color: white; text-decoration: none;">8858099456</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <svg fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                    <div>
+                        <h4>Email</h4>
+                        <p>ananyashahi2019@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="timing-card">
+                    <h4 style="font-size: 1.3rem; margin-bottom: 1rem;">⏰ Clinic Timings</h4>
+                    <p><strong>Monday - Saturday:</strong> 10:00 AM - 8:00 PM</p>
+                    <p><strong>Sunday:</strong> By Appointment</p>
+                </div>
+            </div>
+
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.8572!2d80.9462!3d26.8467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDUwJzQ4LjEiTiA4MMKwNTYnNDYuMyJF!5e0!3m2!1sen!2sin!4v1234567890"
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background-color: wheat;">
+        <p>&copy; 2025 Smile Nest Aesthetic Dental Clinic. All rights reserved.</p>
+        <p>Designed with ❤️ for your beautiful smile</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
