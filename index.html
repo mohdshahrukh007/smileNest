@@ -16,6 +16,19 @@
             box-sizing: border-box;
         }
 
+        .drImage {
+            width: 200px;
+            /* your size */
+            height: 200px;
+            /* your size */
+            object-fit: cover;
+            /* keeps image proper */
+            object-position: center -20px;
+            /* move head up/down/left/right */
+            border-radius: 50%;
+            /* optional: make circle */
+        }
+
         :root {
             --primary: #004d7a;
             --secondary: #00a6fb;
@@ -616,35 +629,38 @@
             box-shadow: var(--shadow-lg);
             padding: 1rem;
         }
+
         @media (max-width: 768px) {
             .contact-info-box {
-            background: var(--gradient-1);
-            /* color: var(--white); */
-            /* padding: 4rem 3rem; */
-            border-radius: 30px;
-            background: var(--gradient-1);
-            color: var(--white);
-            /* padding: 4rem 3rem; */
-            /* margin: -9px; */
-            border-radius: 30px;
-            box-shadow: var(--shadow-lg);
-            width: 23rem;
-            box-shadow: var(--shadow-lg);
-            display: block;
-            position: relative;
-            transform: translate(-10px, 0px);
+                background: var(--gradient-1);
+                /* color: var(--white); */
+                /* padding: 4rem 3rem; */
+                border-radius: 30px;
+                background: var(--gradient-1);
+                color: var(--white);
+                /* padding: 4rem 3rem; */
+                /* margin: -9px; */
+                border-radius: 30px;
+                box-shadow: var(--shadow-lg);
+                width: 23rem;
+                box-shadow: var(--shadow-lg);
+                display: block;
+                position: relative;
+                transform: translate(-10px, 0px);
             }
+
             .contact-info-box h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-            padding: 12px;
-            margin: -17px;
-        }
-        .contact-section{
-            padding: 0px;
-        }
-        
+                font-family: 'Playfair Display', serif;
+                font-size: 2.5rem;
+                margin-bottom: 2rem;
+                padding: 12px;
+                margin: -17px;
+            }
+
+            .contact-section {
+                padding: 0px;
+            }
+
         }
 
         .contact-info-box h2 {
@@ -659,7 +675,7 @@
             gap: 1.5rem;
             margin-bottom: 2rem;
             padding: 0.5rem;
-            margin:23px;
+            margin: 23px;
             background: rgba(255, 255, 255, 0.1);
             border-radius: 15px;
             transition: all 0.3s ease;
@@ -1052,7 +1068,7 @@
     <section id="about" class="about">
         <div class="about-content">
             <div class="about-image">
-                <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=800" alt="Dr. Ananya Shahi">
+                <img src="assets/dr.jpg" class="drImage" alt="Dr. Ananya Shahi">
             </div>
             <div class="about-text">
                 <h2>Dr. Ananya Shahi</h2>
@@ -1361,7 +1377,7 @@
                     <div class="contact-item-icon">📍</div>
                     <div class="contact-item-text">
                         <h4>Location</h4>
-                        <p>111/9, Vrindavan Yojna,<br>Near LPS School, Lucknow - 226029<br>(near SGPGI)</p>
+                        <p>111/9, Vrindavan Yojna,<br>Near LPS School, Lucknow - 226005 <br>(near SGPGI)</p>
                     </div>
                 </div>
 
